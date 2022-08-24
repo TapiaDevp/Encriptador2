@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header><img src="img/Vector.png" alt="logo Alura" class="logo"></header>
+    
+    <div class="contenedor1">
+        <textarea name="txtEn" class="input-texto"  cols="30" rows="10" placeholder="Ingrese el Texto a encriptar..."></textarea>
+    </div>
+
+    <div class="contenedor2">
+
+        <img src="img/Rectangle 1.png" alt="rectangulo" class="rec" ">
+        
+        <div class="contenedor2-1" id="c1">
+            <img src="img/font.png" alt="No hay busquedas" class="muñeco" id="im"></img>
+            <p id="pa">No hay busquedas encontradas</p>
+            <div>
+            <button class="copi" id="cop" onclick="btnCopiar()">Copiar</button>
+        </div>
+        </div>
+    </div>
+    
+
+    <div class="botones">
+        <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+        <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+    </div>
+
+    <div class="encrip" id="c2">
+        <textarea id="res" disabled name="txt" class="mensaje" cols="30" rows="10" placeholder="El texto encriptado esta aqui" class="i2" ></textarea>
+
+    </div>
+    
+    <script src="encriptar.js"></script>
+<footer>
+    <p>Creado por Alberto Tapia</p>
+</footer>
+   
+</body>
+</html>
