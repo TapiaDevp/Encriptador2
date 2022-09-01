@@ -84,10 +84,10 @@ function desencriptar(stringDesincriptada){
 
 
 function btnCopiar(){
-    navigator.clipboard.writeText(
-        document.getElementById("men").value
-    );
-    alert("OK! Texto Copiado");
- }
+    let mensaje2 = mensaje.value;
+    navigator.clipboard.writeText(mensaje2);
+    alert("texto copiado");
+    //inputMensaje.focus();
+}
 
-document.querySelector("cop").addEventListener("click", btnCopiar);
+ 
